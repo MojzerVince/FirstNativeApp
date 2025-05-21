@@ -3,18 +3,22 @@ import {
   StyleSheet,
   Text,
   Image,
-  SafeAreaView 
+  SafeAreaView ,
+  Button
 } from 'react-native';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>ASD</Text>
-      <Image source={require('./assets/favicon.png')}/>
-      <Image borderRadius={15} blurRadius={2} source={{
-        width: 200,
-        height: 200,
-        uri: 'https://reactnative.dev/img/tiny_logo.png' }} />
+      <Text>Open up App.js to start working on your app!</Text>
+      <Image
+        source={{
+          uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }}
+        style={{ width: 200, height: 200 }}
+      />
+      <StatusBar style="auto" />
+      <Button title="Anyád" onPress={() => alert('Eyyo!')} />
     </SafeAreaView>
   );
 }

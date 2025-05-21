@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FirstNativeApp",
-    "slug": "FirstNativeApp",
+    "slug": "firstnativeapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,6 +23,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e1bea962-2e84-4fd1-b7e3-e3879c13d4d5"
+      }
+    },
+    "owner": "mojzi1969"
   }
 }
